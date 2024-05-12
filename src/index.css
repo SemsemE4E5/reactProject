@@ -1,0 +1,31 @@
+*{
+    font-weight:bold;
+    font-family: cursive;
+  }
+  body{
+    background-color: rgb(37, 35, 35);
+  }
+  h1{
+    text-align: center;
+    font-size: 50px;
+    color: cornflowerblue;
+    font-weight: bold;      
+    position: relative;
+    margin: 20px auto ;
+  }
+  h1::after{
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: cornflowerblue;
+    margin: auto;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  

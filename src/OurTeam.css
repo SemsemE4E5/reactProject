@@ -1,0 +1,108 @@
+#About{
+    position: relative;
+    height: 1000px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  #About .div1 h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  #About .div1 span{
+    font-weight: 800;
+  }
+  #About .div2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto 0px;
+
+  }
+  #About .div2 .card{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    border: none;
+  }
+  #About .div2 .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+  }
+  #About .div2 .card .separator{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(143, 140, 140);
+  }
+  #About .div2 .card .card-body p{
+    color: rgb(91, 90, 90);
+  }
+  #About .div2 .card .card-body div p{
+    font-size: 20px;
+    display: flex;
+    margin-top: 20px;
+  }
+  #About .div2 .card .card-body div p i{
+    font-size: medium;
+  }
+  #About .div2 .card .card-body div p span {
+    font-size: medium;
+    margin-left: 30px;
+  }
+  #About .div3{
+    width: 80%;
+    height: 300px;
+    margin: 100px auto 0px;
+    background-image: linear-gradient(to right, rgb(116, 39, 135) , rgb(201, 23, 236));
+    padding: 20px;
+    position: relative;
+  }
+  #About .div3 div{
+    width:50px;
+    height: 50px;
+    background-color:white ;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    rotate: 45deg;
+  }
+  #About .div3 h2{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20px;
+  }
+  #About .div3 span{
+    font-weight: 800; 
+  }
+  #About .div3 form{
+    padding: 20px;
+    width: 100%;
+    margin:50px auto;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #About .div3 form input{
+    height: 30px;
+    width: 20%;
+    padding-left: 20px;
+  }
+  #About .div3 form button{
+    border: 1px solid white;
+    background-color: transparent ;
+    color: white;
+    height: 30px;
+    width: 140px;
+  }
+  #About .div3 form button:hover{
+    color: purple;
+    background-color: white;
+    transform: scale(1.05);     
+  }
+
+  

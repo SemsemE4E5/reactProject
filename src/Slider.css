@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #d6f9dd;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 8rem;
+  z-index: 9;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 500ms ease, transform 500ms ease;
+  transform: translateY(60px);
+}
+
+.caption .current-caption {
+  transition-delay: 1000ms;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caption .previous-caption {
+  transform: translateY(-60px);
+}
+
+.caption .caption-heading {
+  transition: all 500ms ease-in;
+}
+
+.caption .caption-heading h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-indent: -0.2rem;
+  letter-spacing: .2rem;
+  font-weight: 300;
+}
+
+.caption .caption-subhead {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 4px;
+  word-spacing: .1rem;
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+.caption a.btn {
+  color: #333;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: white;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  position: relative;
+  z-index: 9;
+  transition: background-color 250ms ease-in, color 500ms ease-in;
+}
+
+.caption a.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #2C302E;
+  display: flex;
+  position: relative;
+}
+
+.left-col, .right-col {
+  width: 100%;
+  box-sizing: border-box;
+  height: calc(100% - 4rem);
+  overflow: hidden;
+}
+
+.left-col {
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  margin: 2rem;
+  position: relative;
+}
+
+.left-col .slide {
+  filter: grayscale(100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: left top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: transform 1000ms cubic-bezier(1.000, 0.040, 0.355, 1.000), clip-path 1000ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transform: translateY(-100%);
+  scale: 1;
+  z-index: -1;
+}
+
+.left-col .slide.previous {
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+  animation-delay: 1s;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  transition: 3s ease transform;
+  will-change: transform;
+}
+
+.left-col .slide.previous.change {
+  transform: translateY(50%);
+}
+
+.left-col .slide.next {
+  transform: translateY(-100%);
+  z-index: 3;
+  opacity: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.left-col .slide.current {
+  opacity: 1;
+  transform: translateY(0) scale(1.25);
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.right-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-col .preview {
+  max-width: 400px;
+}
+
+.nav {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.nav a {
+  color: rgba(250, 250, 250, 1);
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.nav:hover .slide-up,
+.nav:hover .slide-down {
+  opacity: .5;
+  transform: translateX(0);
+}
+
+.nav .slide-up,
+.nav .slide-down {
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity .25s ease, transform .25s ease;
+  z-index: 99;
+}
+
+.nav .slide-up {
+  top: 50%;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.component2{
+  height: 500px;
+  margin-top: 30px;
+}
+.carousel-slide{
+  position: relative;
+  height: 400px;
+}
+.carousel-item{
+  transition:0.5s ease-in-out;
+}
+.carousel-slide img{
+  width:100%;
+  height: 450px;
+}
+.carousel-slide button{
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  border: none;
+  outline: none;
+  padding: 50px 20px;
+}
+.carousel-control-prev-icon{
+  left: 10px;
+}
+.carousel-control-next-icon{
+  right: 10px;
+}

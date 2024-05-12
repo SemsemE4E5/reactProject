@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  background-color: black;
+}
+header{
+  margin: 10px 0px 0px ;
+  position: sticky;
+  top :5px;
+  margin-bottom: 20px;
+}
+.row{
+  width:100%;
+  min-height:70px;
+  margin: 0px;
+  border-radius: 20px;
+}
+img{
+  width:150px;
+  height:70px;
+}
+ul{width: 100%;}
+a{
+  font-size: large;
+  transition: 0.3s;
+  color: rgb(16, 169, 82);
+  text-decoration: none;
+}
+li{
+  width:10%;
+  text-align: center;
+  transition: 0.3s;
+}
+li:hover{
+  background-color: rgb(16, 169, 82);
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+li:hover a{
+  color:white;
+  text-decoration: none;
+}
+input{
+  color:seagreen ;
+}
+.liActive{
+  background-color: rgb(16, 169, 82);
+  transform: scale(1.1);
+  border-radius: 10px;
+}   
+.linkActive{
+  color: white;
+  text-decoration: none;
+}
+/*------------------ The End Of The Header Nav Bar --------------------------*/

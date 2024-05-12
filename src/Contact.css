@@ -1,0 +1,76 @@
+/* Contact.css */
+
+#Contact {
+  margin-top: 50px;
+  position: relative;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+#Contact .div1 {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#Contact .div1 h2 {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#Contact .div1 .separator {
+  width: 15%;
+  height: 2px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#Contact .div2 {
+  margin-top: 50px;
+}
+
+#Contact .div2 h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#Contact .div2 i {
+  position: relative; /* Change position to relative */
+  display: inline-block; /* Add display property */
+  margin-right: 10px; /* Adjust margin */
+}
+
+#Contact .div2 h3 {
+  display: inline-block; /* Add display property */
+  color: forestgreen;
+}
+
+#Contact .div3 p {
+  margin-top: 70px;
+  color: forestgreen;
+  font-size: 24px;
+  text-align: center;
+}
+
+#Contact form {
+  width: 90%;
+  margin: 0 auto; /* Center the form */
+}
+
+#Contact form input {
+  color: forestgreen;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+
+#Contact form button {
+  margin-top: 20px;
+  width: 100%; /* Make button full width */
+}
